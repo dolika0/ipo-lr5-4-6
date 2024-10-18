@@ -1,3 +1,4 @@
+#вариант 4
 with open('text.txt', 'r', encoding='utf-8') as infile:#чтение информации из файла text.txt
     spis = infile.readlines()#инициализация переменной spis
 
