@@ -1,7 +1,7 @@
-#вариант 4
-with open('text.txt', 'r', encoding='utf-8') as infile:#чтение информации из файла text.txt
-    spis = infile.readlines()#инициализация переменной spis
 
-with open('output.txt', 'w', encoding='utf-8') as outfile:#запись информации в файл output.txt
-    for line in spis:#цикл for
-        outfile.write(line[::-1] + '\n')#запись строки в обратном порядке
+file1 = open('text.txt', 'r', encoding='utf-8') # Открываем файл
+text = file1.readlines() # Построчно считываем информацию
+     
+file2 = open('output.txt', 'w', encoding='utf-8') # Открываем второй файл
+for line in text: # Цикл
+    file2.write(line[::-1] + '\n') # Выводим строки в обратном порядке
